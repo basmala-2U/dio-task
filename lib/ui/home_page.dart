@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../data/models/product_model.dart';
-import '../data/network/products_service.dart';
+import '../data/network/api_service.dart';
 import 'package:provider/provider.dart';
 import '../data/providers/theme_provider.dart';
 
@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    productsFuture = ProductsService().getProducts();
+    productsFuture = ApiService().getProducts();
   }
 
   @override

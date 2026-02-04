@@ -3,7 +3,7 @@ import '../network/dio_config.dart';
 import '../network/api_constants.dart';
 import '../models/product_model.dart';
 
-class ProductsService {
+class ApiService {
   final Dio dio = DioConfig.getDio();
 
   Future<List<ProductModel>> getProducts() async {
